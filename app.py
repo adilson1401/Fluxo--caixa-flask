@@ -137,4 +137,5 @@ def login():
 @app.route('/fluxo', methods=['GET', 'POST'])
 def fluxo():
     if not session.get('logado'):
-    return redirect(url_for('login'))
+        return 
+    redirect(url_for('login'))
